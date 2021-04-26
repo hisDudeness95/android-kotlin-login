@@ -60,9 +60,7 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         observeAuthenticationState()
 
-        binding.authButton.setOnClickListener {
-            // TODO call launchSignInFlow when authButton is clicked
-        }
+        binding.authButton.setOnClickListener { launchSignInFlow() }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
